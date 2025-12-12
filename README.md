@@ -1,4 +1,4 @@
-# 🌍 Horizon - Travel Booking Platform
+# 🌍 Travel Booking Platform
 
 A modern, fully responsive travel booking website built with Next.js 16, React 19, TypeScript, and Tailwind CSS 4. This is a pixel-perfect implementation of a Figma design featuring a beautiful hero section and comprehensive travel search functionality.
 
