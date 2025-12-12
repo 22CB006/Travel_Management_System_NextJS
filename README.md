@@ -1,24 +1,12 @@
-# 🌍 Horizon - Travel Booking Platform
+# 🌍 Travel Booking Platform
 
-A modern, fully responsive travel booking website built with Next.js 16, React 19, TypeScript, and Tailwind CSS 4. This is a pixel-perfect implementation of a Figma design featuring a beautiful hero section and comprehensive travel search functionality.
+A modern, fully responsive travel booking website built with Next.js 16, React 19, TypeScript, and Tailwind CSS 4.
 
 ![Next.js](https://img.shields.io/badge/Next.js-16.0.10-black)
 ![React](https://img.shields.io/badge/React-19.2.1-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38bdf8)
 
-## ✨ Features
-
-- 🎨 **Pixel-Perfect Design** - Faithful implementation of Figma design
-- 📱 **Fully Responsive** - Mobile, tablet, laptop, and desktop optimized
-- 🎬 **Animated Hero** - Dynamic scrolling text (DISCOVER → EXPLORE → TRAVEL)
-- 📐 **Single Screen Layout** - Everything fits without scrolling
-- ⚡ **Next.js 16** - Latest App Router with Turbopack
-- 🎯 **TypeScript** - Full type safety throughout
-- 🎨 **Tailwind CSS 4** - Modern utility-first styling
-- 🧩 **Component Architecture** - Modular, reusable components
-- ♿ **Accessible** - Semantic HTML and ARIA support
-- 🚀 **Performance** - Optimized for Core Web Vitals
 
 ## 🚀 Quick Start
 
@@ -34,20 +22,6 @@ npm run dev
 ```
 
 That's it! The site is now running locally.
-
-## 📸 Screenshots
-
-### Desktop View
-- Hero section with large "DISCOVER EXPLORE TRAVEL" heading
-- 8 travel category tabs (Packages, Hotels, Cabs, Activities, Trains, Buses, Flights, Cruise)
-- Comprehensive search form with multiple fields
-- Full navigation menu
-
-### Mobile View
-- Responsive stacked layout
-- Hamburger menu navigation
-- Touch-optimized interface
-- Horizontal scrolling tabs
 
 ## 🏗️ Project Structure
 
@@ -203,21 +177,3 @@ npm run start
    - Loading states
    - Error handling
    - Toast notifications
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow the existing code style and component patterns.
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🙏 Acknowledgments
-
-- Design implemented from Figma
-- Built with Next.js and Tailwind CSS
-- Icons created as SVG components
-
----
-
-**Built with ❤️ using Next.js 16, React 19, and Tailwind CSS 4**
