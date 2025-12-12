@@ -7,17 +7,14 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
-      <div className="relative min-h-[120vh] w-full overflow-hidden md:min-h-screen">
+      <div className="relative min-h-[100vh] w-full overflow-hidden md:min-h-[80vh]">
         {/* Background Image - Mobile */}
-        <div className="absolute inset-0 z-0 md:hidden">
-          <Image
+        <div className="absolute inset-0 z-0 md:hidden bg-[#a8c5d6]">
+          <img
             src="/images/hero-background-mobile.png"
             alt="Winter mountain landscape"
-            fill
-            className="object-cover object-center"
-            priority
-            quality={100}
-            unoptimized
+            className="w-full h-full"
+            style={{ objectFit: 'contain', objectPosition: 'center top' }}
           />
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/10" />
