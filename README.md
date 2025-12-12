@@ -1,6 +1,6 @@
 # 🌍 Travel Booking Platform
 
-A modern, fully responsive travel booking website built with Next.js 16, React 19, TypeScript, and Tailwind CSS 4. This is a pixel-perfect implementation of a Figma design featuring a beautiful hero section and comprehensive travel search functionality.
+A modern, fully responsive travel booking website built with Next.js 16, React 19, TypeScript, and Tailwind CSS 4.
 
 ![Next.js](https://img.shields.io/badge/Next.js-16.0.10-black)
 ![React](https://img.shields.io/badge/React-19.2.1-blue)
