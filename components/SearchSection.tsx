@@ -9,7 +9,7 @@ export function SearchSection() {
 
   return (
     <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-      <div>
+      <div className="flex flex-col md:items-center">
         {/* Trip type options for Flights tab - appears ABOVE tabs */}
         {activeTab === "flights" && (
           <div className="bg-black/60 backdrop-blur-sm rounded-[10px] px-[10px] py-0 hidden md:inline-flex gap-[15px] items-start mb-[8px]">
@@ -28,7 +28,9 @@ export function SearchSection() {
           </div>
         )}
         
-        <TravelTabs activeTab={activeTab} onTabChange={setActiveTab} />
+        <div className="w-full md:inline-flex md:w-auto overflow-x-auto scrollbar-hide">
+          <TravelTabs activeTab={activeTab} onTabChange={setActiveTab} />
+        </div>
         <SearchForm activeTab={activeTab} />
       </div>
     </div>

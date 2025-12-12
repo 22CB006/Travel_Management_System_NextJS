@@ -132,19 +132,21 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Mobile Search Icon - Fixed position, only visible on mobile */}
-      <button className="md:hidden fixed bottom-[120px] right-[20px] w-[80px] h-[80px] rounded-full bg-[#ff6a00] flex items-center justify-center shadow-2xl hover:bg-[#e55f00] transition-all hover:scale-105 active:scale-95 z-50">
-        <img
-          src="/icons/search-mobile.svg"
-          alt="Search"
-          className="w-[40px] h-[40px]"
-        />
-      </button>
-
-      {/* Desktop Search Button - Only visible on desktop */}
-      <div className="hidden md:flex justify-center mt-8">
-        <button className="backdrop-blur-[3px] bg-[rgba(41,56,62,0.6)] text-white text-[18px] font-semibold rounded-full px-[48px] py-[20px] hover:bg-[rgba(41,56,62,0.8)] transition-all hover:scale-105 active:scale-95 shadow-lg">
+      {/* Mobile Search Button - Only visible on mobile */}
+      <div className="md:hidden flex justify-center mt-8 mb-[35vh]">
+        <button className="backdrop-blur-[3px] bg-[rgba(41,56,62,0.6)] text-white text-[14px] font-semibold rounded-[80px] px-[20px] py-[10px] h-[37px] hover:bg-[rgba(41,56,62,0.8)] transition-all active:scale-95 shadow-lg">
           Search Here
+        </button>
+      </div>
+
+      {/* Mobile Search Icon - Sticky, only visible on mobile */}
+      <div className="md:hidden sticky top-[calc(100vh-100px)] flex justify-center z-50 pointer-events-none">
+        <button className="w-[60px] h-[60px] rounded-full flex items-center justify-center shadow-2xl hover:scale-105 active:scale-95 transition-all pointer-events-auto">
+          <img
+            src="/icons/Home.svg"
+            alt="Search"
+            className="w-[60px] h-[60px]"
+          />
         </button>
       </div>
     </div>

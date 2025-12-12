@@ -14,9 +14,10 @@ export default function Home() {
             src="/images/hero-background-mobile.png"
             alt="Winter mountain landscape"
             fill
-            className="object-cover"
+            className="object-cover object-center"
             priority
             quality={100}
+            unoptimized
           />
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/10" />
@@ -28,9 +29,10 @@ export default function Home() {
             src="/images/hero-background-desktop.png"
             alt="Winter mountain landscape"
             fill
-            className="object-cover"
+            className="object-cover object-center"
             priority
             quality={100}
+            unoptimized
           />
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/10" />
