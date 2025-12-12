@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
-      <div className="relative min-h-screen w-full overflow-hidden md:min-h-screen">
+      <div className="relative min-h-[120vh] w-full overflow-hidden md:min-h-screen">
         {/* Background Image - Mobile */}
         <div className="absolute inset-0 z-0 md:hidden">
           <Image
@@ -63,7 +63,7 @@ export default function Home() {
         <div className="relative z-20">
           <Header />
           
-          <main className="pt-32 md:pt-28 lg:pt-32 pb-16 md:pb-12">
+          <main className="pt-32 md:pt-28 lg:pt-32 pb-32 md:pb-12">
             <div className="space-y-6 md:space-y-10 lg:space-y-12">
               <Hero />
               <SearchSection />
