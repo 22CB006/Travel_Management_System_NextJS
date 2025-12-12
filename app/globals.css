@@ -1,15 +1,73 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* ============================================
+     COLOR SYSTEM - Based on Figma Design
+     ============================================ */
+  
+  /* Background Colors */
+  --bg-primary: #f2f4f6;
+  --bg-secondary: #ebebeb;
+  --bg-white: #ffffff;
+  
+  /* Brand Colors */
+  --primary: #ff6a00;
+  --primary-light: #ffefdf;
+  
+  /* Text Colors */
+  --text-primary: #16242a;
+  --text-secondary: #1e1e1e;
+  --text-subheader: #29383e;
+  
+  /* Button Colors */
+  --btn-primary: #ff6a00;
+  --btn-secondary: #29383e;
+  
+  /* Tag/Badge Colors */
+  --tag-bg: #ffefdf;
+  
+  /* Gradient Colors */
+  --gradient-start: #ffd9bd;
+  --gradient-end: #b3e5f1;
+  
+  /* Legacy support */
+  --background: var(--bg-white);
+  --foreground: var(--text-primary);
 }
 
 @theme inline {
+  /* Background Colors */
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-white: var(--bg-white);
+  
+  /* Brand Colors */
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  
+  /* Text Colors */
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-subheader: var(--text-subheader);
+  
+  /* Button Colors */
+  --color-btn-primary: var(--btn-primary);
+  --color-btn-secondary: var(--btn-secondary);
+  
+  /* Tag Colors */
+  --color-tag-bg: var(--tag-bg);
+  
+  /* Gradient Colors */
+  --color-gradient-start: var(--gradient-start);
+  --color-gradient-end: var(--gradient-end);
+  
+  /* Fonts */
+  --font-inter: var(--font-inter);
+  --font-work-sans: var(--font-work-sans);
+  
+  /* Legacy */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +78,294 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-inter), sans-serif;
+}
+
+/* ============================================
+   TYPOGRAPHY SYSTEM - Based on Figma Design
+   Using Inter as Gilroy alternative (free Google Font)
+   ============================================ */
+
+/* Title/Header 1 - Inter Semibold 88px */
+.text-h1 {
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 600;
+  font-size: 88px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+}
+
+/* Header 2 - Inter Semibold 65px */
+.text-h2 {
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+}
+
+/* Header 3 - Inter Semibold 32px */
+.text-h3 {
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+}
+
+/* Subtitle 1 - Inter Semibold 24px */
+.text-subtitle1 {
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+}
+
+/* Subtitle 2 - Inter Semibold 18px */
+.text-subtitle2 {
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+}
+
+/* Body 1 - Inter Medium 18px */
+.text-body1 {
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+}
+
+/* Body 2 - Inter Medium 16px */
+.text-body2 {
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+}
+
+/* Small - Work Sans Medium 14px */
+.text-small {
+  font-family: var(--font-work-sans), sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+}
+
+/* Button Text - Inter Semibold 16px */
+.text-button {
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .text-h1 {
+    font-size: 48px;
+  }
+  
+  .text-h2 {
+    font-size: 40px;
+  }
+  
+  .text-h3 {
+    font-size: 28px;
+  }
+  
+  .text-subtitle1 {
+    font-size: 20px;
+  }
+}
+
+/* ============================================
+   COLOR UTILITY CLASSES
+   ============================================ */
+
+/* Background Colors */
+.bg-primary {
+  background-color: var(--bg-primary);
+}
+
+.bg-secondary {
+  background-color: var(--bg-secondary);
+}
+
+.bg-white {
+  background-color: var(--bg-white);
+}
+
+.bg-brand {
+  background-color: var(--primary);
+}
+
+.bg-brand-light {
+  background-color: var(--primary-light);
+}
+
+.bg-tag {
+  background-color: var(--tag-bg);
+}
+
+/* Gradient Background */
+.bg-gradient {
+  background: linear-gradient(115.578deg, var(--gradient-start) 0.38052%, var(--gradient-end) 84.486%);
+}
+
+/* Text Colors */
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-subheader {
+  color: var(--text-subheader);
+}
+
+.text-brand {
+  color: var(--primary);
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--btn-primary);
+  color: var(--bg-white);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #e55f00;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 106, 0, 0.3);
+}
+
+.btn-secondary {
+  background-color: var(--btn-secondary);
+  color: var(--bg-white);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #1f2d33;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(41, 56, 62, 0.3);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--primary);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid var(--primary);
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: var(--bg-white);
+}
+
+/* Tag/Badge Styles */
+.tag {
+  background-color: var(--tag-bg);
+  color: var(--primary);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Card Styles */
+.card {
+  background-color: var(--bg-white);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(22, 36, 42, 0.08);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(22, 36, 42, 0.12);
+  transform: translateY(-4px);
+}
+
+/* Section Styles */
+.section {
+  padding: 80px 0;
+}
+
+.section-white {
+  background-color: var(--bg-white);
+}
+
+.section-gray {
+  background-color: var(--bg-primary);
+}
+
+.section-gradient {
+  background: linear-gradient(115.578deg, var(--gradient-start) 0.38052%, var(--gradient-end) 84.486%);
+}
+
+/* Container */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  .section {
+    padding: 48px 0;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
