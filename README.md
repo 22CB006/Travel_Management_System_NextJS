@@ -35,20 +35,6 @@ npm run dev
 
 That's it! The site is now running locally.
 
-## 📸 Screenshots
-
-### Desktop View
-- Hero section with large "DISCOVER EXPLORE TRAVEL" heading
-- 8 travel category tabs (Packages, Hotels, Cabs, Activities, Trains, Buses, Flights, Cruise)
-- Comprehensive search form with multiple fields
-- Full navigation menu
-
-### Mobile View
-- Responsive stacked layout
-- Hamburger menu navigation
-- Touch-optimized interface
-- Horizontal scrolling tabs
-
 ## 🏗️ Project Structure
 
 ```
