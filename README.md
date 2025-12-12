@@ -7,18 +7,6 @@ A modern, fully responsive travel booking website built with Next.js 16, React 1
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38bdf8)
 
-## ✨ Features
-
-- 🎨 **Pixel-Perfect Design** - Faithful implementation of Figma design
-- 📱 **Fully Responsive** - Mobile, tablet, laptop, and desktop optimized
-- 🎬 **Animated Hero** - Dynamic scrolling text (DISCOVER → EXPLORE → TRAVEL)
-- 📐 **Single Screen Layout** - Everything fits without scrolling
-- ⚡ **Next.js 16** - Latest App Router with Turbopack
-- 🎯 **TypeScript** - Full type safety throughout
-- 🎨 **Tailwind CSS 4** - Modern utility-first styling
-- 🧩 **Component Architecture** - Modular, reusable components
-- ♿ **Accessible** - Semantic HTML and ARIA support
-- 🚀 **Performance** - Optimized for Core Web Vitals
 
 ## 🚀 Quick Start
 
