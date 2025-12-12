@@ -62,8 +62,7 @@
   --color-gradient-end: var(--gradient-end);
   
   /* Fonts */
-  --font-inter: var(--font-inter);
-  --font-work-sans: var(--font-work-sans);
+  --font-gilroy: var(--font-gilroy);
   
   /* Legacy */
   --color-background: var(--background);
@@ -80,17 +79,22 @@
 body {
   background: var(--bg-primary);
   color: var(--text-primary);
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-gilroy), sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 /* ============================================
    TYPOGRAPHY SYSTEM - Based on Figma Design
-   Using Inter as Gilroy alternative (free Google Font)
+   Using Gilroy font family
    ============================================ */
 
-/* Title/Header 1 - Inter Semibold 88px */
+/* Title/Header 1 - Gilroy Semibold 88px */
 .text-h1 {
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-gilroy), sans-serif;
   font-weight: 600;
   font-size: 88px;
   line-height: 1;
@@ -98,9 +102,9 @@ body {
   color: var(--text-primary);
 }
 
-/* Header 2 - Inter Semibold 65px */
+/* Header 2 - Gilroy Semibold 65px */
 .text-h2 {
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-gilroy), sans-serif;
   font-weight: 600;
   font-size: 65px;
   line-height: 1;
@@ -108,9 +112,9 @@ body {
   color: var(--text-primary);
 }
 
-/* Header 3 - Inter Semibold 32px */
+/* Header 3 - Gilroy Semibold 32px */
 .text-h3 {
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-gilroy), sans-serif;
   font-weight: 600;
   font-size: 32px;
   line-height: 1;
@@ -118,9 +122,9 @@ body {
   color: var(--text-primary);
 }
 
-/* Subtitle 1 - Inter Semibold 24px */
+/* Subtitle 1 - Gilroy Semibold 24px */
 .text-subtitle1 {
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-gilroy), sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 1;
@@ -128,9 +132,9 @@ body {
   color: var(--text-primary);
 }
 
-/* Subtitle 2 - Inter Semibold 18px */
+/* Subtitle 2 - Gilroy Semibold 18px */
 .text-subtitle2 {
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-gilroy), sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 1;
@@ -138,9 +142,9 @@ body {
   color: var(--text-primary);
 }
 
-/* Body 1 - Inter Medium 18px */
+/* Body 1 - Gilroy Medium 18px */
 .text-body1 {
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-gilroy), sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.4;
@@ -148,9 +152,9 @@ body {
   color: var(--text-primary);
 }
 
-/* Body 2 - Inter Medium 16px */
+/* Body 2 - Gilroy Medium 16px */
 .text-body2 {
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-gilroy), sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.4;
@@ -158,9 +162,9 @@ body {
   color: var(--text-primary);
 }
 
-/* Small - Work Sans Medium 14px */
+/* Small - Gilroy Medium 14px */
 .text-small {
-  font-family: var(--font-work-sans), sans-serif;
+  font-family: var(--font-gilroy), sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
@@ -168,9 +172,9 @@ body {
   color: var(--text-primary);
 }
 
-/* Button Text - Inter Semibold 16px */
+/* Button Text - Gilroy Semibold 16px */
 .text-button {
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-gilroy), sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1;
@@ -368,4 +372,9 @@ body {
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+/* Smooth scrolling for horizontal scroll containers */
+.overflow-x-auto {
+  scroll-behavior: smooth;
 }

@@ -117,6 +117,17 @@ npm run dev
 
 Then navigate to http://localhost:3000 and click through each tab to see the different form layouts.
 
+## Troubleshooting
+
+### Issue: Tabs not changing form fields
+**Solution**: The issue was caused by the SearchSection component being hidden with `hidden md:block` classes. This has been fixed by removing the conditional rendering and ensuring the component is always visible.
+
+### Verification Steps:
+1. Open browser console (F12)
+2. Click on different tabs (Hotels, Cabs, Activities, etc.)
+3. Observe the form fields changing dynamically
+4. Check that each tab shows its unique set of fields as per Figma design
+
 ## Files Modified
 1. `components/TravelTabs.tsx` - Made controlled component
 2. `components/SearchForm.tsx` - Implemented dynamic form rendering

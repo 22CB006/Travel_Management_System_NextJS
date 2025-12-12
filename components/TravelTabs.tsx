@@ -22,7 +22,7 @@ interface TravelTabsProps {
 
 export function TravelTabs({ activeTab, onTabChange }: TravelTabsProps) {
   return (
-    <div className="flex gap-[5px] overflow-x-auto scrollbar-hide pb-2">
+    <div className="flex gap-[5px] md:gap-[5px] gap-[2px] overflow-x-auto scrollbar-hide">
       {tabs.map((tab) => {
         const isActive = activeTab === tab.id;
 
@@ -31,20 +31,19 @@ export function TravelTabs({ activeTab, onTabChange }: TravelTabsProps) {
             key={tab.id}
             onClick={() => onTabChange(tab.id)}
             className={`
-              flex items-center justify-center gap-[4px] rounded-t-[10px] 
-              font-semibold text-[16px] whitespace-nowrap transition-all
-              min-w-[152px] h-[52px]
+              flex items-center justify-center gap-[4px] md:gap-[4px] gap-0 rounded-t-[10px] 
+              font-semibold md:text-[16px] text-[14px] whitespace-nowrap transition-all
+              ${isActive ? 'md:w-[152px] min-w-[112px]' : 'md:w-[152px] min-w-[105px]'}
+              md:pt-[10px] md:pb-[15px] md:px-[30px]
+              pt-[10px] pb-[15px] px-[20px]
               ${
                 isActive
-                  ? "bg-[#cedde7] text-[#29383e] backdrop-blur-sm"
-                  : "bg-black/60 text-white hover:bg-black/70"
+                  ? "bg-[#cedde7] text-[#29383e] backdrop-blur-[5px]"
+                  : "bg-[rgba(1,1,1,0.56)] text-white hover:bg-black/70"
               }
             `}
             style={{
-              paddingTop: "10px",
-              paddingRight: "30px",
-              paddingBottom: "15px",
-              paddingLeft: "30px",
+              letterSpacing: "-0.32px",
             }}
           >
             <Image
@@ -52,7 +51,7 @@ export function TravelTabs({ activeTab, onTabChange }: TravelTabsProps) {
               alt={tab.label}
               width={22}
               height={22}
-              className="w-[22px] h-[22px]"
+              className="md:w-[22px] md:h-[22px] w-5 h-5"
             />
             <span>{tab.label}</span>
           </button>

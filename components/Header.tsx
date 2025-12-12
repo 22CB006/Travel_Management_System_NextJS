@@ -15,9 +15,9 @@ export function Header() {
             alt="Horizon Logo" 
             width={24} 
             height={24}
-            className="w-6 h-6"
+            className="w-6 h-6 md:invert-0 invert brightness-0"
           />
-          <span className="text-[#16242a] text-2xl font-semibold" style={{ letterSpacing: "-1.44px" }}>
+          <span className="text-white md:text-[#16242a] text-2xl font-semibold" style={{ letterSpacing: "-1.44px" }}>
             Horizon
           </span>
         </div>
@@ -51,12 +51,12 @@ export function Header() {
         </nav>
 
         {/* Mobile Menu & Auth Buttons */}
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="flex items-center gap-4">
           <MobileMenu />
-          <button className="px-3 sm:px-6 py-2 bg-[#16242a] text-white text-xs sm:text-base font-semibold rounded-lg hover:bg-[#29383e] transition-colors">
+          <button className="hidden md:flex backdrop-blur-[3px] bg-[#29383e] text-white text-[14px] font-semibold rounded-[8px] px-[24px] py-[16px] h-[40px] w-[90px] items-center justify-center hover:bg-[#1e2c32] transition-colors">
             Signup
           </button>
-          <button className="hidden sm:block px-6 py-2 bg-[#6b7c85] text-white text-base font-semibold rounded-lg hover:bg-[#5a6a72] transition-colors">
+          <button className="hidden md:flex backdrop-blur-[3px] bg-[rgba(41,56,62,0.4)] text-[#16242a] text-[14px] font-semibold rounded-[8px] px-[24px] py-[16px] h-[40px] w-[90px] items-center justify-center hover:bg-[rgba(41,56,62,0.5)] transition-colors">
             Login
           </button>
         </div>
