@@ -2,6 +2,11 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { SearchSection } from "@/components/SearchSection";
 import { DealsSection } from "@/components/deals/DealsSection";
+import { OffersRewards } from "@/components/OffersRewards";
+import { ExploreThemes } from "@/components/ExploreThemes";
+import { ExperienceExtraordinary } from "@/components/ExperienceExtraordinary";
+import { EarlyBirdOffers } from "@/components/EarlyBirdOffers";
+import { WeOfferTheBest } from "@/components/WeOfferTheBest";
 import Image from "next/image";
 
 export default function Home() {
@@ -73,6 +78,21 @@ export default function Home() {
 
       {/* Deals Section - Below Hero */}
       <DealsSection />
+
+      {/* Offers & Rewards Section */}
+      <OffersRewards />
+
+      {/* Explore Our Themes Section */}
+      <ExploreThemes />
+
+      {/* Experience the Extraordinary Section */}
+      <ExperienceExtraordinary />
+
+      {/* Early Bird Offers Section */}
+      <EarlyBirdOffers />
+
+      {/* We Offer The Best Section */}
+      <WeOfferTheBest />
     </div>
   );
 }
